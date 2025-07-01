@@ -33,7 +33,7 @@ public class JeecgSystemApplication extends SpringBootServletInitializer {
         app.setDefaultProperties(defaultProperties);
         log.info("[JEECG] Elasticsearch Health Check Enabled: false" );
         
-        ConfigurableApplicationContext application = app.run(args);;
+        ConfigurableApplicationContext application = app.run(args);
         Environment env = application.getEnvironment();
         String ip = InetAddress.getLocalHost().getHostAddress();
         String port = env.getProperty("server.port");
